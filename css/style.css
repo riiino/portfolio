@@ -1,0 +1,397 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  overflow-y: scroll; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+input, textarea {
+  margin: 0;
+  padding: 0; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left; }
+
+a:focus {
+  outline: none; }
+
+/********************************************************************************************* 
+
+ Mixin
+
+*********************************************************************************************/
+/* Color
+------------------------------------*/
+/* Font
+------------------------------------*/
+/* Border
+------------------------------------*/
+/* Mixin
+------------------------------------*/
+/* General
+------------------------------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix {
+  min-height: 1px; }
+
+* html .clearfix {
+  height: 1px;
+  /*¥*/
+     /*/
+height: auto;
+overflow: hidden;
+/**/ }
+
+body {
+  font-family: "Helvetica", sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+  color: #33220b;
+  -webkit-text-size-adjust: 100%;
+  font-size: 86%;
+  background: #fff;
+  letter-spacing: 0.05em; }
+
+a {
+  color: #33220b;
+  text-decoration: none; }
+
+ol {
+  list-style: decimal outside;
+  margin-left: 20px; }
+  ol li {
+    padding-bottom: 7px;
+    line-height: 1.5rem; }
+
+*::selection {
+  background: rgba(80, 64, 40, 0.3); }
+
+*::-moz-selection {
+  background: rgba(80, 64, 40, 0.3); }
+
+/* Common
+--------------------------------------------------------------------------*/
+#container #container-header {
+  width: 100%; }
+  #container #container-header #siteTitle {
+    width: 100%;
+    text-align: center;
+    height: 400px; }
+#container #main {
+  width: 1000px;
+  margin: 50px auto 0; }
+  #container #main .basic {
+    margin-bottom: 100px; }
+    #container #main .basic .ttl_main {
+      margin-bottom: 50px;
+      text-align: center; }
+#container #container-footer {
+  width: 100%;
+  background: #EA5504;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 1.4rem; }
+  #container #container-footer #container-footer-inner {
+    margin: 20px auto;
+    text-align: center;
+    line-height: 150%; }
+    #container #container-footer #container-footer-inner .organizer {
+      margin-bottom: 20px; }
+      #container #container-footer #container-footer-inner .organizer .address {
+        font-size: 0.9rem;
+        display: block; }
+
+.notFound {
+  min-height: 600px;
+  margin: 0 0 70px 0; }
+
+/* Top
+--------------------------------------------------------------------------*/
+.course {
+  width: 1000px;
+  margin: 0 auto; }
+
+.w-chance {
+  background: #eed;
+  width: 100%; }
+  .w-chance .w-chance_inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px 0; }
+
+/* Page
+--------------------------------------------------------------------------*/
+.other_courses {
+  width: 100%;
+  background: #eed; }
+  .other_courses ul {
+    width: 1000px;
+    margin: 0 auto; }
+    .other_courses ul li {
+      float: left;
+      margin: 0 20px 10px 0; }
+      .other_courses ul li:nth-child(4n) {
+        margin: 0 0 10px 0; }
+
+.course .prizes {
+  width: 100%;
+  background: #eee;
+  border: solid 1px #ccc; }
+  .course .prizes td {
+    position: relative; }
+    .course .prizes td .place {
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.w_chance {
+  width: 1000px;
+  margin: 0 auto; }
+  .w_chance .prize-left {
+    float: left;
+    width: 527px;
+    margin-right: 72px; }
+  .w_chance .prize-right {
+    float: left;
+    width: 401px; }
+
+/* Tool
+--------------------------------------------------------------------------*/
+#tool #container #container-header {
+  width: 100%; }
+  #tool #container #container-header #siteTitle {
+    width: 100%;
+    text-align: center;
+    height: 420px;
+    background: url(/images/tool/header_bg.jpg) no-repeat;
+    background-size: cover; }
+#tool #container .dl_sozai {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  background: #ffd200; }
+#tool #container .note {
+  margin-bottom: 30px;
+  color: #eb0000; }
+  #tool #container .note .ttl_note {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: bold; }
+  #tool #container .note .txt_note {
+    text-indent: -0.8em;
+    padding: 0 0 15px 1em;
+    line-height: 170%; }
+#tool #container .data {
+  margin-bottom: 40px; }
+  #tool #container .data h3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 60px;
+    font-size: 1.2rem;
+    padding-left: 40px;
+    background: #26AE4A;
+    color: #fff;
+    margin-bottom: 20px; }
+  #tool #container .data .data_individual {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 235px;
+    height: 400px;
+    float: left;
+    margin: 0 20px 20px 0;
+    border: solid 3px #26AE4A; }
+    #tool #container .data .data_individual:nth-child(4n) {
+      margin: 0 0 20px 0; }
+    #tool #container .data .data_individual .data_thumb {
+      text-align: center;
+      padding: 15px 10px;
+      width: 209px;
+      height: 227px;
+      display: table; }
+      #tool #container .data .data_individual .data_thumb .data_thumb_inner {
+        display: table-cell;
+        vertical-align: middle; }
+    #tool #container .data .data_individual .data_dl {
+      height: 110px;
+      padding: 15px 10px;
+      text-align: center;
+      background: #26AE4A;
+      position: relative;
+      display: block; }
+      #tool #container .data .data_individual .data_dl .data_title {
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 130%; }
+        #tool #container .data .data_individual .data_dl .data_title .branch {
+          width: 50px;
+          height: 25px;
+          line-height: 25px;
+          background: #fff;
+          color: #26AE4A;
+          border-radius: 5px;
+          font-weight: bold;
+          display: inline-block;
+          margin-left: 7px;
+          behavior: url("/js/PIE.htc"); }
+      #tool #container .data .data_individual .data_dl .data_titile_left {
+        text-align: left;
+        padding-left: 6px; }
+      #tool #container .data .data_individual .data_dl .data_ai a {
+        position: absolute;
+        top: 52px;
+        left: 17px;
+        color: #26AE4A;
+        font-weight: bold;
+        display: block;
+        width: 130px;
+        height: 33px;
+        line-height: 33px;
+        margin: 0 auto 3px;
+        text-align: right;
+        padding-right: 65px;
+        background: url(/images/tool/btn_download.gif) no-repeat -195px -33px; }
+        #tool #container .data .data_individual .data_dl .data_ai a:hover {
+          background: url(/images/tool/btn_download.gif) no-repeat -195px 0;
+          color: #fff; }
+      #tool #container .data .data_individual .data_dl .data_pdf a {
+        position: absolute;
+        top: 88px;
+        left: 17px;
+        color: #26AE4A;
+        font-weight: bold;
+        display: block;
+        width: 130px;
+        height: 33px;
+        line-height: 33px;
+        margin: 0 auto;
+        text-align: right;
+        padding-right: 65px;
+        background: url(/images/tool/btn_download.gif) no-repeat 0 -33px; }
+        #tool #container .data .data_individual .data_dl .data_pdf a:hover {
+          background: url(/images/tool/btn_download.gif) no-repeat 0 0;
+          color: #fff; }
+      #tool #container .data .data_individual .data_dl .data_jpg a {
+        position: absolute;
+        top: 90px;
+        left: 17px;
+        color: #26AE4A;
+        font-weight: bold;
+        display: block;
+        width: 130px;
+        height: 33px;
+        padding-right: 65px;
+        line-height: 33px;
+        text-align: right;
+        margin: 0 auto;
+        background: url(/images/tool/btn_download.gif) no-repeat -390px -33px; }
+        #tool #container .data .data_individual .data_dl .data_jpg a:hover {
+          background: url(/images/tool/btn_download.gif) no-repeat -390px 0;
+          color: #fff; }
+      #tool #container .data .data_individual .data_dl .data_psd a {
+        position: absolute;
+        top: 52px;
+        left: 17px;
+        color: #26AE4A;
+        font-weight: bold;
+        display: block;
+        width: 130px;
+        height: 33px;
+        padding-right: 65px;
+        line-height: 33px;
+        text-align: right;
+        margin: 0 auto;
+        background: url(/images/tool/btn_download.gif) no-repeat -780px -33px; }
+        #tool #container .data .data_individual .data_dl .data_psd a:hover {
+          background: url(/images/tool/btn_download.gif) no-repeat -780px 0;
+          color: #fff; }
+      #tool #container .data .data_individual .data_dl .data_mp4 a {
+        position: absolute;
+        top: 52px;
+        left: 17px;
+        color: #26AE4A;
+        font-weight: bold;
+        display: block;
+        width: 130px;
+        height: 33px;
+        padding-right: 65px;
+        line-height: 33px;
+        text-align: right;
+        margin: 0 auto;
+        background: url(/images/tool/btn_download.gif) no-repeat -975px -33px; }
+        #tool #container .data .data_individual .data_dl .data_mp4 a:hover {
+          background: url(/images/tool/btn_download.gif) no-repeat -975px 0;
+          color: #fff; }
+    #tool #container .data .data_individual .data_dl_left {
+      text-align: left; }
+      #tool #container .data .data_individual .data_dl_left .branch {
+        width: 70px;
+        height: 25px;
+        line-height: 25px;
+        background: #fff;
+        color: #26AE4A;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin: -2px 0 5px 7px;
+        text-align: center;
+        font-size: 1rem;
+        behavior: url("/js/PIE.htc"); }
+
+.center {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
